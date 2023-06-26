@@ -1,5 +1,4 @@
 import './App.css';
-import { Header } from "./components/Header/Header"
 import User from "./components/User/User"
 import { Home } from './pages/Home/Home';
 
@@ -15,11 +14,7 @@ function App() {
 
   return (
     <div className="container-full ">
-      <Header />
-
-        <div className='flex flex-row flex-wrap mt-40 mx-20'>
-            <Home />
-        </div>
+        <Home />
     </div>
   );
 }

@@ -7,9 +7,11 @@ interface CounterProps {
 export function Counter({ quantity }: CounterProps) {
 
   return (
-    <div className='w-full flex px-10'>
+    <div className='w-full flex px-0 '>
        {quantity > 0 ? (
-         <h2 className='text-gray-200 text-3xl px-10 mr-10'>Resultados encontrados: {quantity} </h2>
+         <div className='px-5 ml-0 mb-10 '>
+            <h2 className='text-4xl left-10 font-medium text-indigo-500'>Resultados encontrados: {quantity}</h2> 
+         </div>
        ) : ''}
     </div>
   )
