@@ -15,10 +15,9 @@ interface Pokedex {
 }
 
 export function Home({name, image}: Pokemon) {
-  const [pokemons, setPokemons] = useState<Pokemon[]>([])
-
   const [inputSearch, setInputSearch] = useState('')
   const [pokemonFilter, setPokemonFilter] = useState([])
+  const [pokemons, setPokemons] = useState<Pokemon[]>([])
 
   const handleInputSearch = (e: ChangeEvent<HTMLInputElement>) => {
     let pokenomName = e.target.value
